@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #menu li{
+            list-style:none;
+            display:inline-block;
+            padding:10px;
+            width:50px;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link  href="css/style.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        #div{
+            border:2px solid black;
+            height:400px;
+            width:300px;
+            background-color:rgb(113, 230, 113);
+            box-align:center;
+        }
+    </style>
+
+</head>
+<body background='images/docter1.jpg' style="background-size:cover">
+    
+    <!--navbar-->
+        
+    <div class="row">
+
+        <div class="col-sm-12">
+            <nav class="navbar navbar-expand-lg bg-info">
+                
+                  <a class="navbar-brand ps-5 text-dark fw-bold fs-3" href="#">TrustCare</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item text-dark">
+                        <a class="nav-link active ps-5 text-dark fw-bold fs-5" aria-current="page" href="javascript:gotoPage('home','')">Home</a>
+                      </li>
+                      <li class="nav-item ps-5">
+                        <a class="nav-link text-dark fw-bold fs-5" href="javascript:gotoPage('register','')">Register</a>
+                      </li>
+                      <li class="nav-item ps-5">
+                        <a class="nav-link text-dark fw-bold fs-5" href="javascript:gotoPage('contact','')">Contact</a>
+                      </li>
+                      <li class="nav-item ps-5">
+                        <a class="nav-link text-dark fw-bold fs-5" href="javascript:gotoPage('logout','Do you really want to logout?')">LogOut</a>
+                      </li>
+                      <li class="nav-item dropdown ps-5">
+                        <a class="nav-link dropdown-toggle text-dark fw-bold fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Services
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="login.html">Caretaker</a></li>
+                          <li><a class="dropdown-item" href="#">Health Care</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Baby Foods</a></li>
+                        </ul>
+                      </li>
+                      
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success text-dark fw-bold fs-5" type="submit">Search</button>
+                    </form>
+                  </div>
+                
+              </nav>
+        </div>
+    </div>
+    <!--navbar end-->
+    <h1>User Login Here..</h1><hr/>
+    <span id="alert" style="display:none;"></span>
+
+
+
+    <form method="post" onsubmit="loginUser(event);">
+        <table class="my-auto mx-5 card b1" style="width:400px;height:400px; padding:70px 40px;border-radius:80px 0px 80px 0px;border-top:7px solid rgb(4, 115, 143);border-bottom:7px solid rgb(4, 115, 143);">
+        
+            
+            
+        
+        <tr><td class="fs-3"><b>Email</b></td></tr>
+        <lable><th><input type="email" required name="email" id="email"/></th></lable>
+        <tr><td class="fs-3"><b>Password</b></td></tr>
+            <th><input type="password"  required name="password" id="password"/></th><br/><br/>
+       
+        
+            <tr><td><input type="submit"  class="mt-5 fs-5 fw-bold rounded-pill" style="background-color:rgb(103, 219, 208)" value="Login"></td></tr>
+            <tr><td><a href="javascript:gotoPage('register','')">Create an Account</a></td></tr>
+            <tr><td><a href="#" >Forgot Password</a></td></tr>
+          
+          </table>
+    
+    </form>
+
+
+
+
+    
+
+    
+</body>
+
+<script src="./js/crud.js" type="text/javascript"></script>
+<script src="./js/config.js" type="text/javascript"></script>
+<script src="./js/function.js" type="text/javascript"></script>
+<script src="./js/session.js" type="text/javascript"></script>
+<script src="./js/state.js" type="text/javascript"></script>
+</html>
